@@ -1,5 +1,33 @@
 # @cofhe/hardhat-plugin Changelog
 
+## 1.0.2
+
+### Patch Changes
+
+- 16646e6: **@cofhe/hardhat-3-plugin**
+
+  Corrects `cofhe.mocks.deployMocks()` to fall back to the `cofhe` config for `gasWarning`, `mocksDeployVerbosity` and `logMocks`, like the deploy on `network.connect()`. Previously a re-deploy printed the gas warning with `gasWarning: false` (the default), ignored `mocksDeployVerbosity: ''`, and left FHE operation logs off with `logMocks: true`.
+
+  **@cofhe/hardhat-plugin**
+
+  Corrects `hre.cofhe.mocks.deployMocks()` to fall back to `gasWarning` from the `cofhe` config. Previously a re-deploy never printed the gas warning, even with `gasWarning: true`.
+
+- Updated dependencies [26d8cd6]
+- Updated dependencies [800cdb3]
+- Updated dependencies [5b3e61c]
+- Updated dependencies [8731a28]
+- Updated dependencies [afeb3c8]
+- Updated dependencies [0fed6d9]
+- Updated dependencies [a430437]
+- Updated dependencies [ddd7026]
+- Updated dependencies [bbd9b03]
+- Updated dependencies [4418149]
+- Updated dependencies [b70a067]
+- Updated dependencies [f8c6219]
+- Updated dependencies [8fb65ec]
+  - @cofhe/mock-contracts@1.0.2
+  - @cofhe/sdk@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
